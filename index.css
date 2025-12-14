@@ -19,20 +19,6 @@
 
 .carousel-item { transition: transform 0.4s ease-in-out; }
 
-.hero-img {
-  height: 72vh;
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
-}
-
-.carousel-caption { 
-  bottom: auto;
-   top: 5%; 
-  }
-.carousel-caption h1 { 
-  font-size: clamp(1.8rem, 5vw, 3.5rem);
-   }
 
 .tesla-arrow {
    width: auto;
@@ -54,6 +40,7 @@
   border-radius: 100%; 
   position: relative; 
   top: 10px; }
+  
 
 #caroScroll1::-webkit-scrollbar, #caroScroll2::-webkit-scrollbar { 
   display: none; 
@@ -346,3 +333,38 @@ body {
 .ftr :hover{
   color: green;
 }
+/* Default height for desktop & tablet */
+#teslaCarousel,
+#teslaCarousel .carousel-inner,
+#teslaCarousel .carousel-item {
+  height: 75vh;
+}
+
+/* Image perfectly fits and covers */
+.hero-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Caption alignment */
+.carousel-caption {
+  top: 5%;
+  bottom: auto;
+}
+
+/* Responsive heading size */
+.carousel-caption h1 {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+}
+
+/* Mobile-specific adjustment (never below 60vh) */
+@media (max-width: 576px) {
+  #teslaCarousel,
+  #teslaCarousel .carousel-inner,
+  #teslaCarousel .carousel-item {
+    height: 60vh;
+  }
+}
+
+
+
