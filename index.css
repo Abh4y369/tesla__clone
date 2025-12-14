@@ -1,0 +1,348 @@
+
+.nav-icon {
+  font-size: 24px;
+  color: rgb(66, 66, 66);
+  margin-left: 22px;
+  cursor: pointer;
+}
+.nav-icon:hover { opacity: 0.7; }
+
+.tesla-logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.nav-btn { color: black; }
+.nav-btn:hover { background-color: rgb(238, 236, 236); }
+
+.carousel-item { transition: transform 0.4s ease-in-out; }
+
+.hero-img {
+  height: 72vh;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.carousel-caption { 
+  bottom: auto;
+   top: 5%; 
+  }
+.carousel-caption h1 { 
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+   }
+
+.tesla-arrow {
+   width: auto;
+   padding: 0 10px;
+    margin: 40px; 
+  }
+.carousel-arrow { 
+  background: #fff; 
+  color: #000; 
+  font-size: 1.5rem; 
+  padding: 2px 10px; 
+  border-radius: 6px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
+}
+.carousel-indicators [data-bs-target] { 
+  width: 12px; 
+  height: 12px; 
+  background-color: #fff; 
+  border-radius: 100%; 
+  position: relative; 
+  top: 10px; }
+
+#caroScroll1::-webkit-scrollbar, #caroScroll2::-webkit-scrollbar { 
+  display: none; 
+}
+#caroScroll1, #caroScroll2 { 
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+@media (max-width: 768px) {
+  #caroScroll1 > a, #caroScroll2 > a { width: 80vw !important; height: 50vh !important; }
+  #caroScroll1 > a .card img, #caroScroll2 > a .card img { object-fit: cover; height: 100%; width: 100%; }
+}
+
+@media (max-width: 480px) {
+  #caroScroll1 > a, #caroScroll2 > a { width: 90vw !important; height: 40vh !important; }
+}
+
+#caroScroll1, #caroScroll2 {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+#caroScroll1 > a, #caroScroll2 > a { 
+  scroll-snap-align: start; 
+}
+
+#caroIndicators1 a span { 
+  opacity: 0.35; 
+  transition: 0.2s; }
+#caroIndicators1 a.active span { 
+  background-color: black !important; 
+  opacity: 1 !important; 
+} 
+#caroIndicators2 .indicator { 
+  opacity: 0.35; 
+  transition: 0.2s; 
+}
+#caroIndicators2 .indicator.active { 
+  opacity: 1; 
+  background: #000; 
+}
+
+body { 
+  background: #ffffff; 
+}
+
+.tesla-offers-section { 
+  padding: 40px 0; 
+}
+.tesla-offer-card { 
+  background: #f5f5f5; 
+  border-radius: 16px; 
+  overflow: hidden; 
+  display: flex; 
+  height: 100%; 
+  border: none; 
+}
+
+.offer-text-area { 
+  padding: 48px 36px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  flex: 1; 
+}
+.offer-title { 
+  font-size: 2rem; 
+  font-weight: 700; 
+  color: #111; 
+}
+.offer-desc { 
+  font-size: 1.1rem; 
+  margin-top: 8px; 
+  margin-bottom: 28px; 
+  color: #444; 
+}
+
+.offer-img-wrapper { 
+  flex: 1; 
+  height: 100%; 
+}
+.offer-img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+.tesla-btn { 
+  background: white; 
+  border-radius: 30px; 
+  padding: 12px 30px; 
+  font-size: 1rem; 
+  border: none; 
+  font-weight: 600; 
+  color: #111; }
+.tesla-btn:hover { 
+  background: #e8e8e8; 
+}
+
+.tesla-card { 
+  position: relative; 
+  border-radius: 18px; 
+  overflow: hidden; 
+  background: #000; 
+}
+.tesla-card video, .tesla-card img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.tesla-overlay { 
+  position: absolute; 
+  inset: 0; 
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.7) 100%); 
+  pointer-events: none; 
+}
+
+.tesla-text { 
+  position: absolute; 
+  left: 30px; 
+  bottom: 40px;  
+  color: #fff; }
+
+.tesla-title { 
+  font-size: 2.4rem; 
+  font-weight: 700; }
+
+.tesla-btn { 
+  border-radius: 30px; 
+  padding: 10px 28px; 
+  font-weight: 600; 
+  margin-right: 10px; 
+  border: none; }
+.tesla-btn-blue { 
+  background: #3e6ae1; 
+  color: #fff; 
+}
+.tesla-btn-light { 
+  background: #fff; 
+  color: #111; 
+}
+
+.pause-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255,255,255,0.9);
+  color: #111;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.pause-btn:hover { background: rgba(255,255,255,1); }
+.tesla-small-card .tesla-title { font-size: 2rem; }
+
+.tesla-map-wrapper {
+  width: 100%;
+  height: 650px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: #f2f2f2;
+}
+
+.tesla-map-iframe { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  border: 0; 
+  top: 0; 
+  left: 0; }
+
+.find-me-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+.find-me-btn i { 
+  font-size: 16px; 
+}
+.indicator { 
+  width:10px; 
+  height:10px; 
+  border-radius:50%; 
+  display:inline-block; }
+.indicator.active { 
+  background:#000 !important; 
+}    
+.indicator.inactive { 
+  background:#bbb !important; 
+}   
+#caroScroll1 > a,
+#caroScroll2 > a {
+  width: 65vw !important;
+  height: 65vh !important;
+}
+
+@media (max-width: 992px) {
+  #caroScroll1 > a,
+  #caroScroll2 > a {
+    width: 75vw !important;
+    height: 45vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #caroScroll1 > a,
+  #caroScroll2 > a {
+    width: 85vw !important;
+    height: 40vh !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #caroScroll1 > a,
+  #caroScroll2 > a {
+    width: 92vw !important;
+    height: 36vh !important;
+  }
+}
+
+.tesla-map-wrapper {
+  height: 450px; 
+}
+
+@media (max-width: 768px) {
+  .tesla-map-wrapper {
+    height: 320px !important;
+  }
+}
+@media (max-width: 480px) {
+  .tesla-map-wrapper {
+    height: 250px !important;
+  }
+}
+
+.tesla-card {
+  height: 500px;
+}
+
+.tesla-small-card {
+  height: 500px;
+}
+
+@media (max-width: 992px) {
+  .tesla-card,
+  .tesla-small-card {
+    height: 380px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tesla-card,
+  .tesla-small-card {
+    height: 300px !important;
+  }
+}
+
+/* 4. Navbar logo responsive */
+.navbar img {
+  height: auto !important;
+  width: 140px !important;
+}
+
+@media (max-width: 576px) {
+  .navbar img {
+    width: 110px !important;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+.ftr :hover{
+  color: green;
+}
