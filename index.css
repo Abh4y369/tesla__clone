@@ -12,10 +12,6 @@ html, body {
 body {
   background: #ffffff;
 }
-
-/* =========================================================
-   2. NAVBAR & HEADER
-========================================================= */
 .nav-icon {
   font-size: 1.5rem; /* 24px */
   color: rgb(66, 66, 66);
@@ -31,10 +27,6 @@ body {
   height: auto !important;
   width: 140px !important;
 }
-
-/* =========================================================
-   3. HERO CAROUSEL
-========================================================= */
 .carousel-item {
   transition: transform 0.4s ease-in-out;
 }
@@ -58,8 +50,6 @@ body {
 .carousel-caption h1 {
   font-size: clamp(1.8rem, 5vw, 3.5rem);
 }
-
-/* Carousel arrows */
 .tesla-arrow {
   width: auto;
   padding: 0 10px;
@@ -83,10 +73,6 @@ body {
   position: relative;
   top: 10px;
 }
-
-/* =========================================================
-   4. HORIZONTAL SCROLL CAROUSELS
-========================================================= */
 #caroScroll1,
 #caroScroll2 {
   max-width: 100vw;
@@ -110,10 +96,6 @@ body {
   height: 40vh !important;
   max-width: 100vw;
 }
-
-/* =========================================================
-   5. SCROLL INDICATORS
-========================================================= */
 .indicator {
   width: 10px;
   height: 10px;
@@ -148,10 +130,6 @@ body {
   opacity: 1;
   background: #000;
 }
-
-/* =========================================================
-   6. OFFER CARDS
-========================================================= */
 .tesla-offers-section {
   padding: 40px 0;
 }
@@ -195,10 +173,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-/* =========================================================
-   7. TESLA CARDS & VIDEO
-========================================================= */
 .tesla-card,
 .tesla-small-card {
   position: relative;
@@ -260,7 +234,7 @@ body {
 }
 .pause-btn:hover { background: #fff; }
 
-/* Buttons */
+
 .tesla-btn {
   background: #fff;
   border-radius: 30px;
@@ -281,10 +255,6 @@ body {
   background: #fff;
   color: #111;
 }
-
-/* =========================================================
-   8. MAP SECTION
-========================================================= */
 .tesla-map-wrapper {
   width: 100%;
   height: 250px;
@@ -317,10 +287,6 @@ body {
   cursor: pointer;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
-
-/* =========================================================
-   9. FOOTER
-========================================================= */
 .ftr:hover {
   color: green;
 }
@@ -329,10 +295,6 @@ footer {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
-/* =========================================================
-   10. RESPONSIVE BREAKPOINTS
-========================================================= */
 @media (min-width: 576px) {
   #teslaCarousel,
   #teslaCarousel .carousel-inner,
