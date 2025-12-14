@@ -314,8 +314,6 @@ body {
     height: 300px !important;
   }
 }
-
-/* 4. Navbar logo responsive */
 .navbar img {
   height: auto !important;
   width: 140px !important;
@@ -333,31 +331,23 @@ body {
 .ftr :hover{
   color: green;
 }
-/* Default height for desktop & tablet */
 #teslaCarousel,
 #teslaCarousel .carousel-inner,
 #teslaCarousel .carousel-item {
   height: 75vh;
 }
-
-/* Image perfectly fits and covers */
 .hero-img {
   object-fit: cover;
   object-position: center;
 }
-
-/* Caption alignment */
 .carousel-caption {
   top: 5%;
   bottom: auto;
 }
-
-/* Responsive heading size */
 .carousel-caption h1 {
   font-size: clamp(1.8rem, 5vw, 3.5rem);
 }
 
-/* Mobile-specific adjustment (never below 60vh) */
 @media (max-width: 576px) {
   #teslaCarousel,
   #teslaCarousel .carousel-inner,
