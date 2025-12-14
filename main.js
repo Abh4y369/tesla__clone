@@ -86,14 +86,14 @@ initScrollCarousel({ scrollId: 'caroScroll2', indicatorsId: 'caroIndicators2', o
 
 
 // Video toggle (unchanged behavior)
-function toggleVideo(id, btn) {
-  const vid = document.getElementById(id);
-  if (!vid) return;
-  if (vid.paused) {
-    vid.play();
-    btn.innerHTML = "❚❚";
-  } else {
-    vid.pause();
-    btn.innerHTML = "►";
+  function toggleVideo(videoId, btn) {
+    const video = document.getElementById(videoId);
+
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "❚❚"; // pause icon
+    } else {
+      video.pause();
+      btn.innerHTML = "▶"; // play icon
+    }
   }
-}
